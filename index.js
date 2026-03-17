@@ -9,4 +9,6 @@ const PORT = process.env.PORT || 3000;
 
 console.log("Docker is Working");
 
-app.listen(PORT, () => console.log("Server Started At Port" + PORT));
+app.get("/", (req, res) => res.send("HELLO FROM SERVER"));
+
+app.listen(PORT, "0.0.0.0", () => console.log("Server Started At Port" + PORT));
