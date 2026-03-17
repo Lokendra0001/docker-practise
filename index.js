@@ -5,7 +5,7 @@ const app = express();
 dotenv.config();
 
 console.log(process.env.PORT);
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002;
 
 console.log("Docker is Working");
 
